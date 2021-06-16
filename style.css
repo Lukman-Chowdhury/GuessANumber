@@ -15,14 +15,18 @@ header {
 
 .ttl {
   font-size: 3rem;
+  text-align: center;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 70%;
+  height: auto;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 30px;
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   background-color: aliceblue;
   position: relative;
@@ -88,4 +92,19 @@ header {
 .game{
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .show{
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .container{
+    justify-content: center;
+    align-items: center;
+  }
+  .input_section{
+    padding-left: 0;
+  }
 }
