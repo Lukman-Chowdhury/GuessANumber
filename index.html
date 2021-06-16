@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="ttl">Guess The Number!</h1>
+    </header>
+    <div class="doc container">
+      <p>Here is a secret number X.<br> X = [1, 20]. 
+        <br>Each time you select a number the "current status" will tell you 
+        is the choosen number is smaller or bigger than X or you guess it 
+        correclty.
+      <br> You have 5 chance to
+      predict the number. It can be proved that one can guess the number correclty in 5 chance.
+      <br> Let's Start!
+      </p>
+    </div>
+    <div class="container game">
+      <a class="reload" href="#">Play Again</a>
+      <div class="input_section">
+        <div class="txt">
+          <p>Guess a Number</p>
+        </div>
+        <input type="text" class="number" placeholder="Choose From 0 to 20" />
+        <input type="submit" class="btn chck" />
+      </div>
+      <div class="show">
+        <p class="sh-txt sts-txt">
+          Current Status: <span class="status">Guessing!</span>
+        </p>
+        <p class="sh-txt cs-text">
+          Current Score: <span class="scre">100</span>
+        </p>
+        <p class="sh-txt bs-text">Best Score: <span class="bs-scre">0</span></p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
